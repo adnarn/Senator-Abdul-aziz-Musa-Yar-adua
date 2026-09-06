@@ -1,3 +1,6 @@
+import meetingImage from '../assets/meeting-room.jpg'; // Adjust filename to match yours
+import youth from '../assets/youth-workshop.jpg'; // Adjust filename to match yours
+
 export const mockActivities = [
   {
     id: 1,
@@ -7,7 +10,7 @@ export const mockActivities = [
     time: "10:00 AM",
     location: "Katsina Central Primary School",
     type: "event",
-    image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&h=400&fit=crop&crop=faces", // African community meeting
+    image: meetingImage,
     postedBy: "Admin",
     postedAt: "2026-02-01T08:00:00Z"
   },
@@ -19,7 +22,7 @@ export const mockActivities = [
     time: "08:00 AM",
     location: "Katsina Central Farm Settlement",
     type: "program",
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=400&fit=crop&crop=center", // African farming
+    image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&h=400&fit=crop&crop=center&auto=format",
     postedBy: "Admin",
     postedAt: "2026-01-28T10:30:00Z"
   },
@@ -31,7 +34,7 @@ export const mockActivities = [
     time: "09:00 AM",
     location: "Senator's Zone Office",
     type: "workshop",
-    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=400&fit=crop&crop=faces", // African youth workshop
+    image: youth,
     postedBy: "Admin",
     postedAt: "2026-01-25T14:20:00Z"
   },
@@ -43,7 +46,7 @@ export const mockActivities = [
     time: "07:00 AM",
     location: "Batagarawa Primary Health Center",
     type: "health",
-    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&h=400&fit=crop&crop=faces", // African health outreach
+    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&h=400&fit=crop&crop=faces&auto=format",
     postedBy: "Admin",
     postedAt: "2026-01-20T09:15:00Z"
   },
@@ -55,7 +58,7 @@ export const mockActivities = [
     time: "09:00 AM",
     location: "Katsina Central Skills Center",
     type: "training",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop&crop=faces", // African skills training
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop&crop=faces&auto=format",
     postedBy: "Admin",
     postedAt: "2026-01-18T11:45:00Z"
   }

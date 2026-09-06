@@ -1,9 +1,9 @@
-// src/pages/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Users, Calendar, Mail, Briefcase, ArrowRight } from 'lucide-react';
 import { mockActivities } from '../data/mockActivities';
 import ActivityCard from '../components/ActivityCard';
+import senatorImage from '../assets/senator.png'; // Update this path to match your image location
 
 const Home = () => {
   const features = [
@@ -41,31 +41,59 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <div className="relative bg-primary-700 text-white py-20">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Senator Abdul'aziz Musa Yar'adua
-          </h1>
-         <p className="text-xl md:text-2xl mb-6 text-primary-100">Katsina Central Zone</p>
-          <p className="text-lg max-w-3xl mx-auto text-primary-50">
-            Empowering our community through transparent governance, development programs, 
-            and citizen engagement.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link
-              to="/register"
-              className="bg-white text-primary-700 px-6 py-3 rounded-md font-medium hover:bg-primary-50 transition-colors"
-            >
-              Join Our Community
-            </Link>
-            <Link
-              to="/activities"
-              className="bg-primary-600 text-white px-6 py-3 rounded-md font-medium hover:bg-primary-500 transition-colors"
-            >
-              View Activities
-            </Link>
+      {/* Hero Section with Senator Image */}
+      <div className="relative bg-primary-700 text-white py-16 md:py-20 overflow-hidden">
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-black opacity-30"></div>
+        
+        {/* Content Container */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            {/* Left side - Senator Image */}
+            <div className="md:w-2/5 flex justify-center md:justify-start">
+              <div className="relative">
+                {/* Decorative circle behind image */}
+                <div className="absolute inset-0 bg-primary-400 rounded-full opacity-20 blur-xl scale-110"></div>
+                <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                  <img 
+                    src={senatorImage} 
+                    alt="Senator Abdul'aziz Musa Yar'adua"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Small decorative ring */}
+                <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-primary-300 rounded-full opacity-30"></div>
+                <div className="absolute -top-2 -left-2 w-16 h-16 bg-primary-500 rounded-full opacity-20"></div>
+              </div>
+            </div>
+
+            {/* Right side - Text Content */}
+            <div className="md:w-3/5 text-center md:text-left">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
+                Senator Abdul'aziz Musa Yar'adua
+              </h1>
+              <p className="text-xl md:text-2xl mb-3 text-primary-100 font-semibold">
+                Katsina Central Zone
+              </p>
+              <p className="text-base md:text-lg max-w-2xl text-primary-50 leading-relaxed">
+                Empowering our community through transparent governance, development programs, 
+                and citizen engagement.
+              </p>
+              <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
+                <Link
+                  to="/register"
+                  className="bg-white text-primary-700 px-6 py-3 rounded-md font-medium hover:bg-primary-50 transition-colors shadow-lg"
+                >
+                  Join Our Community
+                </Link>
+                <Link
+                  to="/activities"
+                  className="bg-primary-600 text-white px-6 py-3 rounded-md font-medium hover:bg-primary-500 transition-colors shadow-lg"
+                >
+                  View Activities
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
