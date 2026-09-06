@@ -8,8 +8,7 @@ export const mockApplications = [
     status: "pending",
     applicationDate: "2026-02-01",
     lga: "Katsina",
-    ward: "Kofar Soro",
-    amount: 500000
+    ward: "Kofar Soro"
   },
   {
     id: 2,
@@ -20,8 +19,7 @@ export const mockApplications = [
     status: "approved",
     applicationDate: "2026-01-28",
     lga: "Batagarawa",
-    ward: "Rimi",
-    amount: 300000
+    ward: "Rimi"
   },
   {
     id: 3,
@@ -32,8 +30,7 @@ export const mockApplications = [
     status: "rejected",
     applicationDate: "2026-01-25",
     lga: "Mani",
-    ward: "Mani",
-    amount: 150000
+    ward: "Mani"
   },
   {
     id: 4,
@@ -44,8 +41,7 @@ export const mockApplications = [
     status: "pending",
     applicationDate: "2026-01-20",
     lga: "Bindawa",
-    ward: "Bindawa",
-    amount: 500000
+    ward: "Bindawa"
   },
   {
     id: 5,
@@ -56,7 +52,6 @@ export const mockApplications = [
     status: "approved",
     applicationDate: "2026-01-18",
     lga: "Katsina",
-    ward: "Kofar Kaura",
-    amount: 300000
+    ward: "Kofar Kaura"
   }
 ];

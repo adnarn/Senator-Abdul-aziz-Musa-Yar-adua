@@ -1,7 +1,6 @@
-// src/pages/ApplyEmpowerment.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Briefcase, User, Phone, Mail, MapPin, Home, DollarSign } from 'lucide-react';
+import { Briefcase, User, Phone, Mail, MapPin, Home } from 'lucide-react';
 import { mockApplications } from '../data/mockApplications';
 
 const ApplyEmpowerment = () => {
@@ -12,8 +11,7 @@ const ApplyEmpowerment = () => {
     email: '',
     lga: '',
     ward: '',
-    programType: 'Agricultural Empowerment',
-    amount: 0
+    programType: 'Agricultural Empowerment'
   });
   const [submitted, setSubmitted] = useState(false);
 
@@ -67,7 +65,7 @@ const ApplyEmpowerment = () => {
       <div className="bg-white rounded-lg shadow-md p-6 md:p-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Apply for Empowerment Program</h1>
         <p className="text-gray-600 mb-6">
-          Fill out the form below to apply for our empowerment initiatives.
+          Fill out the form below to apply for our empowerment initiatives in Katsina Central Zone.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -179,23 +177,6 @@ const ApplyEmpowerment = () => {
                 <option key={type} value={type}>{type}</option>
               ))}
             </select>
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Amount Requested (₦)
-            </label>
-            <div className="relative">
-              <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-              <input
-                type="number"
-                name="amount"
-                value={formData.amount}
-                onChange={handleChange}
-                className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
-                placeholder="0"
-              />
-            </div>
           </div>
 
           <button

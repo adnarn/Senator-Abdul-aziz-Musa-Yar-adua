@@ -48,9 +48,7 @@ const Home = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Senator Abdul'aziz Musa Yar'adua
           </h1>
-          <p className="text-xl md:text-2xl mb-6 text-primary-100">
-            Katsina Central Constituency
-          </p>
+         <p className="text-xl md:text-2xl mb-6 text-primary-100">Katsina Central Zone</p>
           <p className="text-lg max-w-3xl mx-auto text-primary-50">
             Empowering our community through transparent governance, development programs, 
             and citizen engagement.

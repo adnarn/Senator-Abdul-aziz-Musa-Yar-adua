@@ -12,6 +12,8 @@ import AdminActivities from './pages/admin/AdminActivities';
 import AdminMessages from './pages/admin/AdminMessages';
 import AdminApplications from './pages/admin/AdminApplications';
 import AdminCrewPerformance from './pages/admin/AdminCrewPerformance';
+import AdminBeneficiaries from './pages/admin/AdminBeneficiaries';
+import AdminAssociations from './pages/admin/AdminAssociations';
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
             <Route path="/admin/messages" element={<AdminMessages />} />
             <Route path="/admin/applications" element={<AdminApplications />} />
             <Route path="/admin/crew" element={<AdminCrewPerformance />} />
+            <Route path="/admin/beneficiaries" element={<AdminBeneficiaries />} />
+            <Route path="/admin/associations" element={<AdminAssociations />} />
           </Routes>
         </main>
       </div>

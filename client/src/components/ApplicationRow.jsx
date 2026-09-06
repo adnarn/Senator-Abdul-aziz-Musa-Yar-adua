@@ -1,4 +1,3 @@
-// src/components/ApplicationRow.jsx
 import React from 'react';
 import StatusBadge from './StatusBadge';
 
@@ -11,10 +10,11 @@ const ApplicationRow = ({ application, onApprove, onReject }) => {
       </td>
       <td className="px-4 py-3 text-sm">{application.phone}</td>
       <td className="px-4 py-3 text-sm">{application.programType}</td>
+      <td className="px-4 py-3 text-sm">{application.lga}</td>
+      <td className="px-4 py-3 text-sm">{application.ward}</td>
       <td className="px-4 py-3">
         <StatusBadge status={application.status} />
       </td>
-      <td className="px-4 py-3 text-sm">₦{application.amount.toLocaleString()}</td>
       <td className="px-4 py-3 text-sm">{application.applicationDate}</td>
       <td className="px-4 py-3">
         {application.status === 'pending' && (

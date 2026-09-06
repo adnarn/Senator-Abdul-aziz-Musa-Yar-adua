@@ -1,7 +1,6 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Users, Calendar, Mail, Briefcase, LayoutDashboard, Home } from 'lucide-react';
+import { Menu, X, Users, Calendar, Mail, Briefcase, LayoutDashboard, Home, Award, UsersRound } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +13,8 @@ const Navbar = () => {
     { path: '/admin/activities', label: 'Activities', icon: Calendar },
     { path: '/admin/messages', label: 'Messages', icon: Mail },
     { path: '/admin/applications', label: 'Applications', icon: Briefcase },
+    { path: '/admin/beneficiaries', label: 'Beneficiaries', icon: Award },
+    { path: '/admin/associations', label: 'Associations', icon: UsersRound },
     { path: '/admin/crew', label: 'Crew Performance', icon: Users },
   ] : [
     { path: '/', label: 'Home', icon: Home },
@@ -86,7 +87,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1">
