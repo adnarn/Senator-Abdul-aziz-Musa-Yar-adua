@@ -1,0 +1,62 @@
+export const mockApplications = [
+  {
+    id: 1,
+    applicantName: "Abdullahi Musa",
+    phone: "08012345678",
+    email: "abdullahi@example.com",
+    programType: "Agricultural Empowerment",
+    status: "pending",
+    applicationDate: "2026-02-01",
+    lga: "Katsina",
+    ward: "Kofar Soro",
+    amount: 500000
+  },
+  {
+    id: 2,
+    applicantName: "Rukayya Umar",
+    phone: "08098765432",
+    email: "rukayya@example.com",
+    programType: "Small Business Grant",
+    status: "approved",
+    applicationDate: "2026-01-28",
+    lga: "Batagarawa",
+    ward: "Rimi",
+    amount: 300000
+  },
+  {
+    id: 3,
+    applicantName: "Suleiman Danjuma",
+    phone: "08056789012",
+    email: "suleiman@example.com",
+    programType: "Skills Acquisition Training",
+    status: "rejected",
+    applicationDate: "2026-01-25",
+    lga: "Mani",
+    ward: "Mani",
+    amount: 150000
+  },
+  {
+    id: 4,
+    applicantName: "Aisha Abubakar",
+    phone: "08034567890",
+    email: "aisha@example.com",
+    programType: "Agricultural Empowerment",
+    status: "pending",
+    applicationDate: "2026-01-20",
+    lga: "Bindawa",
+    ward: "Bindawa",
+    amount: 500000
+  },
+  {
+    id: 5,
+    applicantName: "Bashir Lawal",
+    phone: "08078901234",
+    email: "bashir@example.com",
+    programType: "Small Business Grant",
+    status: "approved",
+    applicationDate: "2026-01-18",
+    lga: "Katsina",
+    ward: "Kofar Kaura",
+    amount: 300000
+  }
+];
